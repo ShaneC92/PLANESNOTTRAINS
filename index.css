@@ -1,0 +1,49 @@
+body {
+   margin: 0;
+}
+
+.sky {
+   overflow: hidden;
+   position: relative;
+}
+
+/* Left to Right planes */
+.plane1 {
+   width: 10vh;
+   height: 3em;
+   animation: planes 65s ease-in-out infinite;
+}
+
+.plane2 {
+   z-index: 1;
+   margin-top: 30vh;
+   width: 5em;
+   height: 10px;
+   animation: planes 65s ease-in-out infinite 11s backwards;
+}
+
+.plane3 {
+   margin-top: 45vh;
+   width: 5em;
+   height: 3em;
+   animation: planes 65s ease-in-out infinite 4s backwards;
+}
+
+
+
+
+/* Keyframes for the planes */
+@keyframes planes {
+   0% {
+      transform: translateX(-20vw);
+   }
+   50% {
+      transform: translateX(110vw);
+   }
+   51% {
+      transform: translateX(115vw) scaleX(-1);
+   }
+   100% {
+      transform: translateX(-20vw) scaleX(-1);
+   }
+}
