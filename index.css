@@ -1,5 +1,8 @@
 body {
    margin: 0;
+   background-image: url('World.png');
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .sky {
@@ -15,7 +18,7 @@ body {
 }
 
 .plane2 {
-   z-index: 1;
+   z-index: -1;
    margin-top: 30vh;
    width: 5em;
    height: 10px;
